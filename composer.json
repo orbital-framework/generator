@@ -1,0 +1,15 @@
+{
+    "name": "orbital-framework/generator",
+    "description": "Generator utility for Orbital Framework",
+    "keywords": ["orbital-framework","generator","uuid","password"],
+    "homepage": "https://github.com/orbital-framework/generator",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Orbital\\Generator\\": "src"
+        }
+    }
+}
