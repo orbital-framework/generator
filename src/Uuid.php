@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Orbital\Generator;
 
@@ -8,7 +9,7 @@ abstract class Uuid {
      * Generate short UUID v4, without dashes
      * @return string
      */
-    public static function generateShort(){
+    public static function generateShort(): string {
         $uuid = str_replace('-', '', self::generate());
         return $uuid;
     }
@@ -19,7 +20,7 @@ abstract class Uuid {
      * @see http://en.wikipedia.org/wiki/UUID
      * @return string
      */
-    public static function generate(){
+    public static function generate(): string {
 
         $prBits = null;
         $fp = @fopen('/dev/urandom', 'rb');
